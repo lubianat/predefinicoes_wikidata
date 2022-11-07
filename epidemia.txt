@@ -1,0 +1,73 @@
+<!-- Predefinição em construção! --->
+
+<!-- 07/11/2022, https://pt.wikipedia.org/w/index.php?title=Predefini%C3%A7%C3%A3o:Info/Epidemia/Wikidata --->
+
+<!-- Predefinição em construção! --->
+
+<!-- Página adaptade de https://pt.wikipedia.org/w/index.php?title=Predefini%C3%A7%C3%A3o:Info/Museu/Wikidata -->
+<includeonly>{{Info
+| estilo         = width:265px; line-height:1.2em; font-size: 88%;
+| título-estilo  = background-color:#4682B4; color:white; height:40px; line-height:1.1em; padding:0px;
+| tópico-estilo  = background-color:#4682B4; color:white; line-height:1.5em;
+| rótulo-estilo  = background-color:lightsteelblue;
+| dados-estilo      = padding:4px 4px 4px 0;
+| rodapé-estilo     = padding:4px 0 4px 4px; background-color:gainsboro
+|título           = {{{nome
+|{{#if:{{#invoke:WikidataIB|getLabel|{{{qid|}}}}}
+|{{#invoke:WikidataIB|getLabel|{{{qid|}}}}}
+|{{PAGENAMEBASE}}}}}}}{{#if:{{#invoke:WikidataIB | getPreferredValue | P1448 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=nome_nativo | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} | {{{nome_nativo|}}}}}|<br>''<small>{{#invoke:WikidataIB | getPreferredValue | P1448 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=nome_nativo | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} | {{{nome_nativo|}}}}}</small>''}}
+
+<!-- Se a variável imagem estiver preenchida, use-a; caso contrário, se existir a imagem do mapa de distribuição no Wikidata, use-a -->
+|imagem1          = {{#statements:P1846}}
+|imagem_tamanho1  = {{{imagem_tamanho1|300x300px}}}
+
+|imagem_legenda1  = {{{legenda|{{#invoke:Infobox/Wikidata |getImageLegend | lang={{{idioma|pt-br}}} | FETCH_WIKIDATA}}}}}
+
+|imagem2          = {{{imagem2|}}}
+|imagem_tamanho2  = {{{imagem_tamanho2|300x300px}}}
+|imagem_legenda2  = {{{imagem_legenda2|}}}
+
+<!-- Rótulos, tópicos e dados de 1-99 reservados para informações gerais sobre a epidemia -->
+<!-- A epidemia -->
+
+|rótulo1         = Doença
+|dados1          = {{{doença|}}}
+
+|rótulo2         = Agente infeccioso
+|dados2         = {{{vírus|}}}
+
+<!-- O lugar e momento no qual ela ocorre -->
+
+|rótulo3         = Data de início
+|dados3         = {{#invoke:WikidataIB | getPreferredValue | P580 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
+|rótulo11         = Localidade
+|dados11          = {{#invoke:WikidataIB | getPreferredValue | P276 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=localização | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{localidade|}}}}}
+
+|rótulo12         = Localização
+|dados12          = {{#invoke:WikidataIB | getPreferredValue | P131 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=cidade | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{cidade|{{{localização|}}}}}}}}
+
+|rótulo13        = País
+|dados13         = {{#invoke:WikidataIB | getPreferredValue | P17 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=país | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{país|}}}}}
+
+|rótulo14        = Site
+|dados14         = {{#if:{{#invoke:WikidataIB | getPreferredValue | P856 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=website | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{website|}}}}}|[{{#invoke:WikidataIB | getPreferredValue | P856 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=website | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{website|}}}}} ''Website'' oficial]}}
+<!-- Rótulos, tópicos e dados de 100-199 reservados para informações gerais sobre a epidemia -->
+
+|tópico100          = Estatísticas Globais
+
+<!-- Ainda não é possível pegar referências do Wikidata, ref inputada via casos_ref e mortes_ref -->
+
+|rótulo101          = Casos confirmados
+|dados101        = {{#invoke:Wd|property|best|qualifier|reference|P1603|P585 }}
+
+{{#invoke:WikidataIB |getQualifierValue |P793 |pval=Q385378 |qual=P580 |name=xyz |fetchwikidata=ALL }}
+
+|rótulo102          = Mortes
+|dados102           = {{#invoke:Wd|property|best|qualifier|reference|P1120|P585 }}
+
+<!-- Fim da infobox -->
+| rodapé            = {{EditeNoWikidata|noicon={{{noicon|false}}}}}
+}}
+{{#invoke:Check for unknown parameters|check|unknown={{artigos e outros|[[Categoria:!Parâmetros desconhecidos|_VALUE_{{PAGENAME}}]]}}|preview=Página utilizando [[Predefinição:Info/Epidemia/Wikidata]] com parâmetro desconhecido "_VALUE_"|ignoreblank=y| título  | imagem  | legenda  | imagem1 | imagem_tamanho1 | imagem_tamanho2 | legenda1 | imagem2 | imagem_legenda2 | idioma | nome_nativo | doença | vírus | origem | localidade | localização | cidade | país | website <!--| periodo | primeiro_caso | inicio | fim | casos | casos_ref | suspeitos | mortes | sobreviventes | area | territorios | nome-tabela | tabela | marcador_tipo | contorno -->| qid | comfontes | só_referenciados | | no icon | sem_ícone | suprimir | logradouro | número (rua) | cidade | }}</includeonly><noinclude>
+{{Documentação|Predefinição:Info/Epidemia/doc}}</noinclude>
