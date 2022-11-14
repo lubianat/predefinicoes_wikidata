@@ -37,6 +37,9 @@
 |rótulo5 = Fórmula
 |dados5 =  {{#invoke:WikidataIB | getPreferredValue | P274 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
 
+|rótulo6 = ChEBI
+|dados6 =  {{#invoke:WikidataIB | getPreferredValue | P683 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
 <!-- Fim da infobox -->
 | rodapé            = {{EditeNoWikidata|noicon={{{noicon|false}}}}}
 }}
