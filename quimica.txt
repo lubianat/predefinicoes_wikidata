@@ -40,6 +40,13 @@
 |rótulo6 = ChEBI
 |dados6 =  {{#invoke:WikidataIB | getPreferredValue | P683 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
 
+|rótulo7 = Massa
+|dados7 =  {{#invoke:WikidataIB | getPreferredValue | P2067 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
+|rótulo8 = Potencial de aquecimento global
+|dados8 =  {{#invoke:WikidataIB | getPreferredValue | P2565 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
+
 <!-- Fim da infobox -->
 | rodapé            = {{EditeNoWikidata|noicon={{{noicon|false}}}}}
 }}
