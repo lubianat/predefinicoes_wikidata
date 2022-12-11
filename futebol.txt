@@ -30,14 +30,23 @@
 |dados3         = {{#invoke:Wd|property|best|reference|P1110 }}
 
 |rótulo4        = Estádio
-|dados4         = {{#invoke:Wd|property|best|reference|P276 }}
+|dados4         = {{#invoke:WikidataIB | getPreferredValue | P276 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
+|rótulo4        = Localidade
+|dados4         = {{#invoke:WikidataIB | getPreferredValue | P276 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
 
 |rótulo5        = Data
 |dados5         = {{#invoke:Wd|property|best|reference|P585 }}
 
 |rótulo6        = País
-|dados6         = {{#invoke:Wd|property|best|reference|P17 }}
+|dados6         = {{#invoke:WikidataIB | getPreferredValue | P17 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
 
+|rótulo7        = Equipes
+|dados7         = {{#invoke:WikidataIB | getPreferredValue | P1923 |qual=P1351| fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
+
+|rótulo8        = Árbitro
+|dados8         = {{#invoke:WikidataIB | getPreferredValue | P1652 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
 
 <!-- Fim da infobox -->
 | rodapé            = {{EditeNoWikidata|noicon={{{noicon|false}}}}}
