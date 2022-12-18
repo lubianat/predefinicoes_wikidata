@@ -1,0 +1,47 @@
+<!-- Predefinição em construção!
+
+<!-- Página adaptada de https://pt.wikipedia.org/w/index.php?title=Predefini%C3%A7%C3%A3o:Info/Epidemia/Wikidata --><includeonly>{{Info
+| estilo         = width:265px; line-height:1.2em; font-size: 88%;
+| título-estilo  = background-color:#4682B4; color:white; height:40px; line-height:1.1em; padding:0px;
+| tópico-estilo  = background-color:#4682B4; color:white; line-height:1.5em;
+| rótulo-estilo  = background-color:lightsteelblue;
+| dados-estilo      = padding:4px 4px 4px 0;
+| rodapé-estilo     = padding:4px 0 4px 4px; background-color:gainsboro
+|título           = {{{nome
+|{{#if:{{#invoke:WikidataIB|getLabel|{{{qid|}}}}}
+|{{#invoke:WikidataIB|getLabel|{{{qid|}}}}}
+|{{PAGENAMEBASE}}}}}}}{{#if:{{#invoke:WikidataIB | getPreferredValue | P1448 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=nome_nativo | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} | {{{nome_nativo|}}}}}|<br>''<small>{{#invoke:WikidataIB | getPreferredValue | P1448 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=nome_nativo | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} | {{{nome_nativo|}}}}}</small>''}}
+
+<!-- Se a variável imagem estiver preenchida, use-a; caso contrário, se existir a imagem no Wikidata, use-a -->
+|imagem1          = {{#statements:P18}}
+|imagem_tamanho1  = {{{imagem_tamanho1|300x300px}}}
+
+|imagem_legenda1  = {{{legenda|{{#invoke:Infobox/Wikidata |getImageLegend | lang={{{idioma|pt-br}}} | FETCH_WIKIDATA}}}}}
+
+|imagem2          = {{{imagem2|}}}
+|imagem_tamanho2  = {{{imagem_tamanho2|300x300px}}}
+|imagem_legenda2  = {{{imagem_legenda2|}}}
+
+|rótulo4        = Localidade
+|dados4         = {{#invoke:WikidataIB | getPreferredValue | P276 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
+|rótulo5        = Data
+|dados5         = {{#invoke:Wd|property|best|reference|P585 }}
+
+|rótulo6        = País
+|dados6         = {{#invoke:WikidataIB | getPreferredValue | P17 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=inicio | onlysourced={{{só_referenciados|no}}} | noicon= {{{sem_ícone|yes}}} | suppressfields= {{{suprimir|}}} |{{{inicio|}}}}}
+
+|rótulo102          = Mortos
+|dados102           = {{#invoke:Wd|property|best|qualifier|reference|P1120|P585 }}
+
+|rótulo103          = Desaparecidos
+|dados103           = {{#invoke:Wd|property|best|qualifier|reference|P1446|P585 }}
+
+|rótulo104          = Feridos
+|dados104           = {{#invoke:Wd|property|best|qualifier|reference|P1339|P585 }}
+
+<!-- Fim da infobox -->
+| rodapé            = {{EditeNoWikidata|noicon={{{noicon|false}}}}}
+}}
+{{#invoke:Check for unknown parameters|check|unknown={{artigos e outros|[[Categoria:!Parâmetros desconhecidos|_VALUE_{{PAGENAME}}]]}}|preview=Página utilizando [[Predefinição:Info/Aluviãol/Wikidata]] com parâmetro desconhecido "_VALUE_"|ignoreblank=y| título  | imagem  | legenda  | imagem1 | imagem_tamanho1 | imagem_tamanho2 | legenda1 | imagem2 | imagem_legenda2 | idioma | nome_nativo }}</includeonly><noinclude>
+{{Documentação|Predefinição:Info/Aluvião/Wikidata/doc}}</noinclude>
