@@ -21,21 +21,29 @@
 |imagem_tamanho2  = {{{imagem_tamanho2|300x300px}}}
 |imagem_legenda2  = {{{imagem_legenda2|}}}
 
+|rótulo90         = Início da comercialização
+|dados90           = {{#invoke:Wd|property|best|reference|P5204 }}
 
-|rótulo4        = Data de comercialização
-|dados4         = {{#invoke:Wd|property|best|reference|P5204<!-- Predefinição em construção!
+|rótulo100          = Marca
+|dados100           = {{#invoke:Wd|property|best|reference|P1716 }}
 
-|rótulo5        = Anos de modelo
-|dados5         = {{#invoke:Wd|property|best|reference|P5444<!-- Predefinição em construção!
+|rótulo101          = Fabricante
+|dados101           = {{#invoke:Wd|property|best|reference|P176 }}
+
 
 |rótulo102          = Comprimento
-|dados102           = {{#invoke:Wd|property|best|qualifier|reference|P2043|P585 }}
+|dados102           = {{#invoke:Wd|property|best|reference|P2043 }}
+
 
 |rótulo103          = Largura
-|dados103           = {{#invoke:Wd|property|best|qualifier|reference|P2049|P585 }}
+|dados103           = {{#invoke:Wd|property|best|reference|P2049 }}
 
 |rótulo104          = Altura
-|dados104           = {{#invoke:Wd|property|best|qualifier|reference|P2048|P585 }}
+|dados104           = {{#invoke:Wd|property|best|reference|P2048 }}
+
+|rótulo105          = Motor
+|dados105           = {{#invoke:Wd|property|best|reference|P516 }}
+
 
 <!-- Fim da infobox -->
 | rodapé            = {{EditeNoWikidata|noicon={{{noicon|false}}}}}
