@@ -1,0 +1,125 @@
+<includeonly>{{
+#if: {{{imagem|}}} ||{{Sem imagem|geo}}}}{{
+#if: {{{latd|{{{lat_degrees|}}}}}}
+||{{falta-geodata|{{{código_pais|{{{código_país|}}}}}}}}}}{{Info
+|título        = {{{nome|{{PAGENAME}}}}}
+|título-classe = topo mapa
+
+|título-estilo = background-color:#{{
+#switch: {{lc:{{{categoria_iucn|{{{iucn|}}}}}}}}
+|v|vi = A5CADA
+|#default = CDE5B2}};
+
+|subtítulo-estilo = line-height: 1.25; font-size:110%; font-weight:normal; background-color:#{{
+#switch: {{lc:{{{categoria_iucn|{{{iucn|}}}}}}}}
+|v|vi = A5CADA
+|#default = CDE5B2}};
+
+|tópico-estilo = font-size:115%; font-weight:bold; background-color:#{{
+#switch: {{lc:{{{categoria_iucn|{{{iucn|}}}}}}}}
+|v|vi = A5CADA
+|#default = CDE5B2}};
+
+|rótulo-estilo = font-weight:bold;
+
+|imagem-tamanho = {{px | {{{imagem_tamanho|}}} | {{{imagens_tamanho|290}}} }}
+|imagem         = <div style="display:inline-block; margin:-2px 0 0 0">{{#if: {{{imagem|{{{image|}}}}}}{{#property:P18}}|[[Imagem:{{#if:{{{imagem|{{{image|}}}}}}|{{{imagem|{{{image|}}}}}}|{{#property:P18}}}}|{{{imagem_largura|{{{image_width|280px}}}}}}|{{{imagem_legenda|{{{image_caption|}}}}}}]]<br /><span style="display:block;padding:5px; font-size:0.9em">{{{imagem_legenda|{{{image_caption|}}}}}}</span>|{{#if:{{{ignora_semimagem|}}}||<span class="noprint">[[Imagem:Falta imagem aves.svg|280px|Taxocaixa sem imagem|link=:Commons:Commons:Upload/pt]]{{Semimagem-taxo|{{truncar|{{PAGENAME}}|1}}}}</span>}}}}</div>
+|legenda = {{{legenda|}}}
+
+|subtítulo = {{#switch: {{lc:{{{categoria_iucn|{{{iucn|}}}}}}}}
+|ia = Categoria '''Ia''' da [[União Internacional para a Conservação da Natureza|IUCN]] ([[Reserva Natural Estrita]])
+|ib = Categoria '''Ib''' da [[União Internacional para a Conservação da Natureza|IUCN]] (Área Selvagem)
+|ii = Categoria '''II''' da [[União Internacional para a Conservação da Natureza|IUCN]] ([[Parque nacional|Parque Nacional]])
+|iii = Categoria '''III''' da [[União Internacional para a Conservação da Natureza|IUCN]] ([[Monumento natural|Monumento Natural]])
+|iv = Categoria '''IV''' da [[União Internacional para a Conservação da Natureza|IUCN]] (Área de Manejo de Habitat/Espécie)
+|v = Categoria '''V''' da [[União Internacional para a Conservação da Natureza|IUCN]] (Paisagem/Costa Protegida)
+|vi = Categoria '''VI''' da [[União Internacional para a Conservação da Natureza|IUCN]] (Área Protegida de Manejo de Recursos)
+|#default = {{#switch: {{lc:{{{tipo|}}}}}
+|pnat = [[Parque natural]]
+|#default = {{{tipo|}}}}}}}
+|tópico10 = {{#ifexpr: {{#expr: {{#if: {{{localização|{{{localizacao|}}}}}}|1|0}} + {{#if: {{{localidade|}}}|1|0}} + {{#if: {{{localidades|{{{cidades|}}}}}}|1|0}} + {{#if: {{{país|}}}|1|0}} + {{#if: {{{países|}}}|1|0}} + {{#if: {{{região1|}}}|1|0}} + {{#if: {{{região2|}}}|1|0}} + {{#if: {{{região3|}}}|1|0}} }} > 2
+|Localização}}
+
+|rótulo11 = Localização
+|dados11  = {{{localização|{{{localizacao|}}}}}}
+|rótulo12 = País
+|dados12  = {{{país|}}}
+|rótulo13 = Países
+|dados13  = {{{países|}}}
+|rótulo14 = {{{região1_rótulo|Região}}}
+|dados14  = {{{região1|}}}
+|rótulo15 = {{{região2_rótulo|}}}
+|dados15  = {{{região2|}}}
+|rótulo16 = {{{região3_rótulo|}}}
+|dados16  = {{{região3|}}}
+|rótulo17 = {{{localidade_rótulo|Localidade mais próxima}}}
+|dados17  = {{{localidade|{{{cidade|}}}}}}
+|rótulo18 = {{{localidades_rótulo|Localidades mais próximas}}}
+|dados18  = {{{localidades|{{{cidades|}}}}}}
+|rótulo19 = Estabelecido
+|dados19  = {{{estabelecido|{{{estabelecido|}}}}}}
+|tópico30 = {{#if: {{{área_ha|}}}{{{área_km2|}}}{{{area|}}}{{{criação|{{{data|}}}}}}{{{nvisit|}}}{{{visitantes|}}}{{{gestão|{{{gestao|}}}}}}{{{sítio|{{{sítio_oficial|}}}}}}
+|Dados}}
+
+|rótulo31 = Área
+|dados31  = {{#if: {{{área_ha|}}} | {{formatnum:{{{área_ha|}}}}} [[Hectare|ha]]
+|{{#if: {{{área_km2|}}} | {{formatnum:{{{área_km2|}}}}} [[Quilómetro quadrado|km²]]
+| {{{area|}}} }} | {{{area|}}} }}
+
+|rótulo40 = Criação
+|dados40  = {{{criação|{{{data|}}}}}}
+|rótulo42 = Visitantes
+|dados42  = {{#if: {{{nvisit|}}}{{{visitantes|}}}
+|{{Formatnumif | {{{nvisit|}}} | {{{visitantes|}}}}}{{
+	#if: {{{ano_visitantes|}}}
+  |&#32;(em {{{ano_visitantes|}}})}}}}
+
+|rótulo45 = Gestão
+|dados45  = {{{gestão|{{{gestao|}}}}}}
+|rótulo46 = Sítio oficial
+|dados46  = {{{sítio|{{{sítio_oficial|}}}}}}
+
+|dados49-estilo = text-align:center; font-size:smaller;
+|dados49  = {{#if: {{{mapa|}}} | [[Imagem:{{{mapa|}}}|center|{{px |{{{mapa_tamanho|}}}|{{{imagens_tamanho|290}}} }}]]{{
+#if: {{{mapa_legenda|}}} |<br />{{{mapa_legenda|}}}}} }}
+
+|rótulo50 = Coordenadas
+|dados50  = {{#if: {{{latd|{{{lat_degrees|}}}}}} | {{Coor dms| {{{latd|{{{lat_degrees|}}}}}} | {{{latm|{{{lat_minutes|}}}}}} | {{{lats|{{{lat_seconds|}}}}}} | {{{latNS|{{{lat_direction|}}}}}} | {{{longd|{{{long_degrees|}}}}}} | {{{longm|{{{long_minutes|}}}}}} | {{{longs|{{{long_seconds|}}}}}} | {{{longEW|{{{long_direction|}}}}}} |{{
+#if: {{{coord_sufixo|}}} |{{{coord_sufixo|}}}|{{
+#if: {{{coord_escala|}}} |scale:{{{coord_escala|}}}|type:region}}}}}} }}
+
+|dados51 = {{Info/AuxMapa | {{{latd|{{{lat_degrees|}}}}}} | {{{latm|{{{lat_minutes|}}}}}} | {{{lats|{{{lat_seconds|}}}}}} | {{{latNS|{{{lat_direction|}}}}}} | {{{longd|{{{long_degrees|}}}}}} | {{{longm|{{{long_minutes|}}}}}} | {{{longs|{{{long_seconds|}}}}}} | {{{longEW|{{{long_direction|}}}}}}|
+mapa      = {{{mapa_alfinete|{{{mapa_predef|}}}}}}|
+mapa_alt  = {{{mapa_alfinete_alt|{{{mapa_predef_alt|}}}}}}|
+|nome     = {{Argvar | {{{mapa_alfinete_rótulo|}}} | {{{mapa_predef_label|}}} |{{{nome|}}} |{{PAGENAME}}}}|
+|legenda1 = {{{mapa_alfinete_legenda|{{{mapa_predef_legenda|}}}}}}|
+|tamanho  = {{Argvar | {{{mapa_alfinete_tamanho|}}} | {{{mapa_predef_largura|}}} }}
+|tamanho_def = {{{imagens_tamanho|290}}}
+|marca     = Disc Plain red (edge).svg
+|marca_tam = 7}}
+
+|rótulo80 = Notas
+|dados80  = {{{notas|}}}
+|dados81  = {{{designações|}}}
+
+|latd={{#if: {{{coord_título|}}}
+  |{{{latd|{{{lat_degrees|}}}}}}}}|
+latm={{{latm|{{{lat_minutes|}}}}}}|
+lats={{{lats|{{{lat_seconds|}}}}}}|
+latNS={{{latNS|{{{lat_direction|}}}}}}|
+longd={{{longd|{{{long_degrees|}}}}}}|
+longm={{{longm|{{{long_minutes|}}}}}}|
+longs={{{longs|{{{long_seconds|}}}}}}|
+longEW={{{longEW|{{{long_direction|}}}}}}
+|coord_sufixo ={{#if: {{{coord_sufixo|}}}
+  |{{{coord_sufixo|}}}
+	|{{#if: {{{coord_escala|}}}
+	|scale:{{{coord_escala|}}}
+	|type:region}} }}
+
+<!-- a variável "coordenadas" usa o valor do Wikidata -->
+|dados82 ={{And2 | {{{mapaWikidata|}}}
+| {{#invoke:WikidataIB | getPreferredValue | P625 | fetchwikidata=ALL | qid={{{qid|}}} | idioma = {{{idioma|}}} | name=mapa | onlysourced={{{só_referenciados|no}}} | suppressfields= {{{suprimir|}}} |{{{coordenadas|}}}}}|{{Mapframe/Wikidata|contorno={{{contorno|}}}||zoom=6|marcador_tipo=park|qid={{{qid|}}}}} }}
+}}</includeonly><noinclude>
+{{Documentação}}
+</noinclude>
